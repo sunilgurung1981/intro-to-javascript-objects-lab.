@@ -16,10 +16,10 @@ const game = {
     { name: "rare candy", quantity: 99 },
   ],
   gymStatus: function () {
-    // Initialize gymTally with completed and incomplete counts
+   
     const gymTally = { completed: 0, incomplete: 0 };
 
-    // Iterate over the gyms array to count completed and incomplete gyms
+    
     this.gyms.forEach((gym) => {
       if (gym.completed) {
         gymTally.completed++;
@@ -28,11 +28,11 @@ const game = {
       }
     });
 
-    // Log the final tally of completed and incomplete gyms
+   
     console.log(gymTally);
   },
   partyCount: function () {
-    // Return the number of Pokémon in the party array
+    
     return this.party.length;
   },
 };
